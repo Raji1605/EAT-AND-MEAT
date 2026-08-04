@@ -7,6 +7,7 @@ import { useProfileModal } from '../context/ProfileModalContext'
 
 const TABS = [
   { id: 'home', label: 'Home', icon: 'home', path: '/' },
+  { id: 'shop', label: 'Shop', icon: 'storefront', path: '/shop' },
   { id: 'cart', label: 'Cart', icon: 'shopping_cart', path: null },
 ]
 

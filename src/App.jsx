@@ -8,6 +8,7 @@ import OrderSuccess from './pages/OrderSuccess'
 import Profile from './pages/Profile'
 import MyOrders from './pages/MyOrders'
 import ProductDetail from './pages/ProductDetail'
+import Shop from './pages/Shop'
 import AdminDashboard from './pages/AdminDashboard'
 import DeliveryDashboard from './pages/DeliveryDashboard'
 import { ProductModalProvider } from './context/ProductModalContext'
@@ -101,6 +102,8 @@ export default function App() {
             path="/product/:productId"
             element={<ProductDetail cartCount={cartCount} addToCart={addToCart} />}
           />
+
+          <Route path="/shop" element={<Shop cartCount={cartCount} />} />
 
           <Route path="/admin" element={<AdminDashboard />} />
 
